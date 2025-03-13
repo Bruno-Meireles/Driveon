@@ -1,8 +1,5 @@
 header {
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
+
     background: var(--backgroundColor);
     padding: 15px 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -12,8 +9,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: auto;
+    padding: 10px 20px;
 }
 
 .logo img {
@@ -22,10 +20,9 @@ header {
 
 .navbar-items {
     display: flex;
-    list-style: none;
+    justify-content: space-between;
     gap: 30px;
-    padding: 0;
-    margin: 0;
+    list-style: none;
 }
 
 .navbar-item {
@@ -41,12 +38,12 @@ header {
 .auth-buttons {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .login-button {
     display: flex;
-    align-items: end;
+    align-items: center;
     background: none;
     border: none;
     cursor: pointer;
@@ -55,6 +52,8 @@ header {
 }
 
 .login-button img {
+    width: 20px;
+    height: 20px;
     margin-right: 5px;
 }
 
@@ -62,7 +61,7 @@ header {
     background: var(--backgroundColor);
     color: var(--textBlue);
     border: solid 1px var(--borderButton);
-    padding: 4px 16px;
+    padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
@@ -71,4 +70,45 @@ header {
 .signup-button:hover {
     background-color: var(--textPurple);
     color: var(--backgroundColor);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--textPurple);
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-items {
+        background: var(--backgroundColor);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        transform: translateY(-110%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-items.open {
+        transform: translateY(0);
+    }
+
+    .auth-buttons {
+        display: none;
+    }
 }

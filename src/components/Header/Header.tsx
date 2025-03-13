@@ -1,36 +1,52 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/img/logo.png";
 import person from "../../assets/img/person.png";
 
-const Header = () => {
+const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+
   return (
     <header>
       <nav className="navbar">
-        <div className="logo">
+        
+        <Link to="/" className="logo">
           <img src={logo} alt="Logo Driveon" />
-        </div>
-        <ul className="navbar-items">
+        </Link>
+
+        <button
+          className="menu-toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+        >
+          ☰
+        </button>
+
+        <ul className={`navbar-items ${menuOpen ? "open" : ""}`}>
           <li>
-            <a className="navbar-item" href="#">
+            <Link className="navbar-item" to="/drivers">
               Drivers
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navbar-item" href="#">
+            <Link className="navbar-item" to="/passengers">
               Passengers
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navbar-item" href="#">
+            <Link className="navbar-item" to="/about-us">
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navbar-item" href="#">
+            <Link className="navbar-item" to="/contact">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
+
         <div className="auth-buttons">
           <button className="login-button">
             <img src={person} alt="Login Icon" />
