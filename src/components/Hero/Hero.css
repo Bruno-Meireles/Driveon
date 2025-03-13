@@ -1,0 +1,21 @@
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    background: white;
+    color: #6a11cb;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
