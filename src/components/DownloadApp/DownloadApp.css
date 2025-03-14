@@ -1,0 +1,61 @@
+.download-app {
+    text-align: center;
+    padding: 50px;
+    background: #f8f9ff;
+}
+
+
+.download-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-image {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.download-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+
+.download-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-content img {
+    max-width: 250px;
+}
+
+.download-text {
+    margin-top: 20px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.download-text a img {
+    width: 150px;
+    margin: 10px;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+
+}
+

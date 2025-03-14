@@ -1,0 +1,11 @@
+.commitment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.commitment-image img {
+    max-width: 100%;
+    height: auto;
+}

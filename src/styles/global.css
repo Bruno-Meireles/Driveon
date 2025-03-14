@@ -24,3 +24,13 @@ body {
     font-weight: 500;
 
 }
+
+h2,
+h3 {
+    color: var(--textPurple);
+}
+
+p {
+    font-size: 14px;
+    color: var(--textGray);
+}

@@ -10,6 +10,7 @@ import Passengers from "./pages/Passengers/Passengers";
 import AboutUs from "./pages/About/About";
 import Contact from "./pages/Contato/Contato";
 import Home from "./pages/Home/Home";
+import Footer from "./components/Footer/Footer";
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

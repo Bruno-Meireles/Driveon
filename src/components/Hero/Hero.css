@@ -1,25 +1,3 @@
-/* .hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(120deg, #6a11cb, #2575fc);
-    color: white;
-}
-
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero button {
-    background: white;
-    color: #6a11cb;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-} */
-
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -48,9 +26,10 @@
 }
 
 .cta-button {
-    background-color: var(--primary-color);
-    color: blueviolet;
-    padding: 10px 20px;
+background: -webkit-linear-gradient(90deg, #011d57, #0042a9, #0061fe, #74a7ff);
+    background: linear-gradient(90deg, #6333d1, #0042a9, #0061fe, #74a7ff);
+    color: var(--backgroundColor);
+    padding: 10px 25px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
