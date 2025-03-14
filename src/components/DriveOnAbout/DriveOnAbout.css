@@ -1,0 +1,58 @@
+.driveon {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    background-color: #f3f4f6;
+}
+
+.driveon-content {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    gap: 40px;
+    width: 100%;
+ }
+
+.driveon-image {
+    flex: 1;
+    max-width: 40%;
+}
+
+.driveon-image img {
+    width: 100%;
+    height: auto;
+}
+
+.driveon-line {
+    max-width: 120px;
+    position: absolute;
+    top: -50px;
+  }
+.driveon-text {
+    position: relative;
+    max-width: 450px;
+    line-height: 1;
+    }
+
+.driveon-text p {
+       line-height: 1.4;
+}
+
+.driveon-learn-more{
+    color: var(--textBlue);
+}
+.driveon-call {
+    padding: 1rem 0;
+    color: var(--textGray);
+}
+.driveon-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}

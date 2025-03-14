@@ -35,3 +35,8 @@ p {
     font-size: 14px;
     color: var(--textGray);
 }
+
+.content {
+  width: 1440px;
+  margin: auto;
+}

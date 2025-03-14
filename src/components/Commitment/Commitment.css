@@ -1,11 +1,41 @@
 .commitment {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 60px 0;
+}
+
+.commitment-content {
+    max-width: 500px;
+}
+
+.commitment h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.commitment p {
+    line-height: 1.6;
+    max-width: 500px;
 }
 
 .commitment-image img {
     max-width: 100%;
     height: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #6d4fef;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #5c3bc9;
 }

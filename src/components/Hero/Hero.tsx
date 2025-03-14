@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         <button className="cta-button">Discover</button>
       </div>
       <div className="hero-image">
-        <img src={banner} alt="" />
+        <img src={banner} alt="Banner" />
       </div>
     </section>
   );

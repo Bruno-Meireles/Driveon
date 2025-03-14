@@ -10,8 +10,8 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <nav className="navbar">
-        
+          <nav className="navbar">
+        {/*     */}
         <Link to="/" className="logo">
           <img src={logo} alt="Logo Driveon" />
         </Link>
@@ -55,6 +55,7 @@ const Header: React.FC = () => {
           <button className="signup-button">Sign Up</button>
         </div>
       </nav>
+     {/* </div> */}
     </header>
   );
 };
