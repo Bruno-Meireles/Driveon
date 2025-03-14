@@ -1,25 +1,53 @@
+.steps {
+    padding: 4rem 0;
+}
+
 .steps-container {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 .steps-base {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
 
+.steps-line {
+    max-width: 120px;
+    position: absolute;
+    top: -50px;
+    transform: translateX(-48%);
+}
+
+.steps-title {
+    font-size: 24px;
+    margin: 0;
+    position: relative;
+    padding: 1.5rem 0;
 }
 
 .step-card {
     text-align: center;
     max-width: 200px;
+    line-height: 1.5;
 }
 
 .step-card img {
     width: 100%;
-    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
+
+.step-card img:hover {
+    transform: scale(1.1);
+
+}
+
 
 .step-card h3 {
     font-size: 18px;

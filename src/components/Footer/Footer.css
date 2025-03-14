@@ -1,16 +1,10 @@
-.background {
-    background-image: url('../../assets/img/footer.png');
+.footer {
+    background-image: url('../../assets/img/fundo-footer.png');
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.footer {
-
     color: white;
-    padding: 40px 0;
     text-align: center;
+    padding: 50px 20px;
 }
 
 .footer-section {
@@ -18,8 +12,8 @@
 }
 
 .footer-section h3 {
+    font-size: 22px;
     margin-bottom: 10px;
-    font-size: 20px;
 }
 
 .footer-section ul {
@@ -29,15 +23,29 @@
 
 .footer-section ul li {
     margin-bottom: 8px;
+    font-size: 16px;
 }
 
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
-    color: #ccc;
+    opacity: 0.8;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .icons img {
-    display: flex;
-    width: 2rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
 }

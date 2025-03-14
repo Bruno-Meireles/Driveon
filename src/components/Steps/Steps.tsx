@@ -33,8 +33,8 @@ const Steps: React.FC = () => {
     <>
       <section className="steps">
         <div className="steps-base">
-          <img src={linha} alt="Line image" />
-          <h2 className="steps-title">How to get starded?</h2>
+          <img className="steps-line" src={linha} alt="Line image" />
+          <h1 className="steps-title">How to get starded?</h1>
         </div>
         <div className="steps-container">
           {sections.map((section, index) => (
