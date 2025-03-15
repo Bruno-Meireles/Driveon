@@ -1,19 +1,25 @@
 .footer {
-    background-image: url('../../assets/img/fundo-footer.png');
-    background-size: cover;
-    background-position: center;
+    background: #5b18a9;
+    /* Ajuste para tom mais próximo da imagem */
     color: white;
-    text-align: center;
     padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footer-section {
-    margin-bottom: 20px;
+    max-width: 300px;
 }
 
 .footer-section h3 {
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .footer-section ul {
@@ -22,8 +28,15 @@
 }
 
 .footer-section ul li {
-    margin-bottom: 8px;
     font-size: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li:hover {
+    color: #ffcc00;
+    /* Pequeno destaque ao passar o mouse */
 }
 
 .footer-bottom {
