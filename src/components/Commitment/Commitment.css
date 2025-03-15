@@ -2,13 +2,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0;
+    
 }
-
-.commitment-content {
-    max-width: 500px;
+.commitment-line{
+      max-width: 120px;      
 }
-
+.commitment-content{
+       margin:0 auto; 
+  }
+.commitment-container {
+    display: flex;
+    flex-direction: column;
+   gap: 2rem;
+   
+}
 .commitment h2 {
     font-size: 28px;
     font-weight: bold;
@@ -16,18 +23,27 @@
 }
 
 .commitment p {
-    line-height: 1.6;
-    max-width: 500px;
+    line-height: 1.5;
+    font-size: 1rem;
+    max-width: 700px;
+    text-align: left;
+    
+}
+.commitment-link{
+    color: var(--textBlue);
 }
 
+
 .commitment-image img {
-    max-width: 100%;
+    max-width: 500px;
     height: auto;
+    position: relative;
+    bottom: 150px;
 }
 
 .btn {
     display: inline-block;
-    background-color: #6d4fef;
+    background-color: var(--textPurple);
     color: white;
     padding: 12px 24px;
     text-decoration: none;
@@ -37,5 +53,5 @@
 }
 
 .btn:hover {
-    background-color: #5c3bc9;
+    background-color: var(--textPurple);
 }
