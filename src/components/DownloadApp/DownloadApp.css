@@ -3,7 +3,7 @@
     background-size: cover;
     width: 100%;
     min-height: 950px;
-      display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
 .download-content {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: start;
     max-width: 600px;
     gap: 20px;
     z-index: 2;

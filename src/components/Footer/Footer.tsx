@@ -15,40 +15,50 @@ const Footer: React.FC = () => {
         <div className="footer-container ">
           <div className="footer-section">
             <Link to="/" className="logo">
-              <img src={logo} alt="Logo Driveon" />
+              <img className="footer-logo" src={logo} alt="Logo Driveon" />
             </Link>
-            <p>Your trusted ride-sharing service.</p>
+            <p className="footer-description">
+              Your trusted ride-sharing service.
+            </p>
           </div>
           <div className="footer-section">
             <h3>About Us</h3>
             <ul>
-              <li>Company</li>
-              <li>Testimonials</li>
-              <li>Our Team</li>
-              <li>Careers</li>
-              <li>Blog</li>
+              <li>Newsroom</li>
+              <li>Investor relations</li>
+              <li>Global citizenship</li>
+              <li>Safety</li>
+              <li>Carrer</li>
             </ul>
           </div>
           <div className="footer-section">
             <h3>Our Products</h3>
             <ul>
-              <li>Ride Services</li>
-              <li>Driver Partners</li>
-              <li>Safety & Security</li>
-              <li>FAQs</li>
+              <li>Take a trip</li>
+              <li>Drive it</li>
+              <li>Eats</li>
+              <li>DriveOn for Business</li>
+              <li>DriveOn Freight</li>
+              <li>Health</li>
+              <li>DriveOn Air</li>
+              <li>Advanced Technologies Group</li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© 2025 DriveOn Technologies Inc.</p>
+          <div className="line"></div>
+
+          <div className="footer-copyright">
+            <p>© 2025 DriveOn Technologies Inc.</p>
+            <span className="icons">
+              <img src={facebook} alt="Facebook Icon" />
+              <img src={twitter} alt="twitter Icon" />
+              <img src={youtube} alt="Youtube Icon" />
+              <img src={instagram} alt="instagram Icon" />
+              <img src={linkedin} alt="linkedin Icon" />
+            </span>
+          </div>
         </div>
-        <span className="icons">
-          <img src={facebook} alt="Facebook Icon" />
-          <img src={twitter} alt="twitter Icon" />
-          <img src={youtube} alt="Youtube Icon" />
-          <img src={instagram} alt="instagram Icon" />
-          <img src={linkedin} alt="linkedin Icon" />
-        </span>
       </div>
     </footer>
   );

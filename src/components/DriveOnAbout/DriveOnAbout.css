@@ -6,13 +6,12 @@
         align-items: center;
         justify-content: space-between;
         gap: 40px;
-    background-color: #f3f4f6;
+    background-color: var(--backgroundColor);
 }
 
 .driveon-content {
     display: flex;
     align-items: center;
-    max-width: 1440px;
     margin: auto;
     gap: 40px;
     width: 100%;
