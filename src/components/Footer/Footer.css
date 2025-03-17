@@ -1,6 +1,12 @@
 .footer {
-    background-image: url(../../assets//img//fundo-footer.png) ;
-     color: white;
+    background-image: url("../../assets/img/fundo-footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: white;
     padding: 50px 20px;
     text-align: center;
 }
@@ -79,7 +85,7 @@ filter: brightness(0) invert(1);
 }
 
 .footer-copyright {
-    width: 80%;
+    width:80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
