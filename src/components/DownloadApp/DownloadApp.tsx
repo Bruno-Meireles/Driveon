@@ -28,22 +28,24 @@ const DownloadApp: React.FC = () => {
       </section>
 
       <div className="register">
-        <div className="register-content">
-          <h3>
-            Register to be
-            <br />a driver partner
-            <img className="arrow" src={setas} alt="Arrow" />
-          </h3>
-          <h3>
-            Register to start <br />
-            your journey
-            <img className="arrow" src={setas} alt="Arrow" />
-          </h3>
-        </div>
+        <div className="content">
+          <div className="register-content">
+            <h3>
+              Register to be
+              <br />a driver partner
+              <img className="arrow" src={setas} alt="Arrow" />
+            </h3>
+            <h3>
+              Register to start <br />
+              your journey
+              <img className="arrow" src={setas} alt="Arrow" />
+            </h3>
+          </div>
 
-        <div className="register-lines">
-          <img src={line} alt="Line" />
-          <img src={line} alt="Line" />
+          <div className="register-lines">
+            <img src={line} alt="Line" />
+            <img src={line} alt="Line" />
+          </div>
         </div>
       </div>
     </>

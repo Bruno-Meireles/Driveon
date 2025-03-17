@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
             <div className="line"></div>
 
             <div className="footer-copyright">
-              <p>© 2025 DriveOn Technologies Inc.</p>
+              <p className="copyright">© 2025 DriveOn Technologies Inc.</p>
               <span className="icons">
                 <img src={facebook} alt="Facebook Icon" />
                 <img src={twitter} alt="twitter Icon" />

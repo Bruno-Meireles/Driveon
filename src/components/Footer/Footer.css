@@ -92,4 +92,8 @@ filter: brightness(0) invert(1);
     text-align: center;
     align-items: center;
     margin: 0 auto;
+  
+}
+.copyright {
+    color: var(--backgroundColor);
 }
