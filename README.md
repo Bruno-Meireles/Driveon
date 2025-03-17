@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# DriveOn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DriveOn é um projeto de e-commerce voltado para venda de produtos automotivos. O sistema conta com uma aplicação **React** no front-end e estilização em **SCSS**. 
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Front-end:
+- React
+- TypeScript
+- CSS (Estilização)
+- Vite (Ferramenta de build)
+- React Router Dom (Gerenciamento de rotas)
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Catálogo de Produtos:** Listagem de produtos automotivos.
+- **Carrinho de Compras:** Permite adicionar e remover produtos.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Como Executar o Projeto
+
+### Requisitos:
+- Node.js instalado (versão recomendada: 18+)
+- Gerenciador de pacotes (npm ou yarn)
+
+### Instalação
+
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/driveon.git
+   cd driveon
+   ```
+
+2. Configuração do **Front-end**:
+   ```sh
+   npm install
+   npm run dev
+   ```
+
+O front-end estará disponível em `http://localhost:5173`.
+
+## Estrutura do Projeto
+
+```
+/driveon
+  |-- /public  # Assets e arquivos públicos
+  |-- /src
+      |-- /assets  # Imagens e arquivos estáticos
+      |-- /components  # Componentes reutilizáveis
+      |-- /pages  # Páginas da aplicação
+      |-- /styles  # Arquivos de estilização SCSS e CSS
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
