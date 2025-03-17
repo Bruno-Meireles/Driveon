@@ -7,6 +7,7 @@ import drivers from "../../assets/img/drivers.png";
 const Commitment: React.FC = () => {
   return (
     <section className="commitment">
+      {/* <div className="content"> */}
       <div className="commitment-content">
         <div className="commitment-container">
         <img className="commitment-line" src={linha} alt="Line" />
@@ -21,6 +22,7 @@ const Commitment: React.FC = () => {
       <div className="commitment-image">
         <img src={drivers} alt="Car img" />
       </div>
+    {/* </div> */}
     </section>
   );
 };

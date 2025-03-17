@@ -11,7 +11,6 @@ const Header: React.FC = () => {
   return (
     <header>
           <nav className="navbar">
-        {/*     */}
         <Link to="/" className="logo">
           <img src={logo} alt="Logo Driveon" />
         </Link>

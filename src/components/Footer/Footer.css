@@ -4,9 +4,11 @@
     padding: 50px 20px;
     text-align: center;
 }
-.footer-logo {
-    color: white;
-   
+.footer-title {
+    color: var(--backgroundColor);
+  }
+.footer-location {
+filter: brightness(0) invert(1);
 }
 .footer-description {
     color: var(--backgroundColor);

@@ -32,18 +32,20 @@ const Steps: React.FC = () => {
   return (
     <>
       <section className="steps">
-        <div className="steps-base">
-          <img className="steps-line" src={linha} alt="Line image" />
-          <h1 className="steps-title">How to get starded?</h1>
-        </div>
-        <div className="steps-container">
-          {sections.map((section, index) => (
-            <div key={index} className="step-card">
-              <img src={section.img} alt={section.title} />
-              <h3>{section.title}</h3>
-              <p>{section.desc}</p>
-            </div>
-          ))}
+        <div className="content">
+          <div className="steps-base">
+            <img className="steps-line" src={linha} alt="Line image" />
+            <h1 className="steps-title">How to get starded?</h1>
+          </div>
+          <div className="steps-container">
+            {sections.map((section, index) => (
+              <div key={index} className="step-card">
+                <img src={section.img} alt={section.title} />
+                <h3>{section.title}</h3>
+                <p>{section.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

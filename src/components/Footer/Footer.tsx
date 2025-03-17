@@ -1,9 +1,10 @@
-import logo from "../../assets/img/logo.png";
+
 import facebook from "../../assets/icons/facebook.png";
 import twitter from "../../assets/icons/twitter.png"
 import youtube from "../../assets/icons/youtube.png";
 import instagram from "../../assets/icons/instagram.png";
 import linkedin from "../../assets/icons/linkedin.png";
+import location from "../../assets/icons/location.png"
 
 import "./Footer.css";
 import { Link } from "react-router-dom";
@@ -15,11 +16,17 @@ const Footer: React.FC = () => {
         <div className="footer-container ">
           <div className="footer-section">
             <Link to="/" className="logo">
-              <img className="footer-logo" src={logo} alt="Logo Driveon" />
+              <h1 className="footer-title">
+                Drive
+                <span>
+                  <img className="footer-location" src={location} alt="Icon Location" />
+                </span>n
+              </h1>
             </Link>
-            <p className="footer-description">
-              Your trusted ride-sharing service.
-            </p>
+            <ul>
+              <li className="footer-description">Resolution Center</li>
+              <li className="footer-description">English</li>
+            </ul>
           </div>
           <div className="footer-section">
             <h3>About Us</h3>

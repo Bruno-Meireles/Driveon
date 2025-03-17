@@ -1,74 +1,81 @@
 .download-app {
-    background: url('../../assets/img/app.png') no-repeat ;
+    background: url('../../assets/img/app.png') no-repeat center center;
     background-size: cover;
     width: 100%;
-    min-height: 950px;
+    min-height: 900px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 20px;
     position: relative;
+    color: var(--textGray);
 }
 
 .download-content {
-    display: flex;
-    flex-direction: column;
+    word-wrap: break-word;
     text-align: start;
-    max-width: 600px;
-    gap: 20px;
     z-index: 2;
 }
 
-
+.download-content h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--textPurple);
+    max-width: 60%;
+    word-wrap: break-word;
+}
 
 .download-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 20px;
-    margin-top: 15px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .download-buttons a img {
-    width: 180px;
+    width: 160px;
     transition: transform 0.2s ease-in-out;
 }
 
 .download-buttons a img:hover {
     transform: scale(1.1);
 }
-
-
 .register {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
     width: 100%;
-    max-width: 800px;
-    margin-top: 30px;
-    /* Ajuste fino para alinhar melhor */
-    padding-bottom: 50px;
-}
-
-.register span {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 60px 20px;
     text-align: center;
 }
 
-.register h3 {
-    font-size: 20px;
-    /* Aumentei o tamanho do texto */
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
+.register-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     flex-wrap: wrap;
 }
 
-/* Ajuste nas setas e linhas */
-.register img {
-    width: 60px;
-    /* Aumentei para melhor proporção */
+.register-content h3 {
+    font-size: 1.2rem;
+    color: var(--textPurple);
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 4rem;
+    white-space: nowrap;
+ 
 }
+.arrow {
+    max-height: 4rem;
+}
+
+.register-lines {
+ display: flex;
+ justify-content: space-between;
+  margin-top: 20px;
+}
+.register-lines img {
+    margin: auto;
+    max-width:150px;    
+    
+ }
