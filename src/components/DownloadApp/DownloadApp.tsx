@@ -9,19 +9,20 @@ const DownloadApp: React.FC = () => {
   return (
     <>
       <section className="download-app">
-        <div className="content"></div>
-        <div className="download-content">
-          <h2>
-            Download the DriveOn application to get more benefits and
-            experience.
-          </h2>
-          <div className="download-buttons">
-            <a href="#">
-              <img src={googlePlay} alt="Google Play Store" />
-            </a>
-            <a href="#">
-              <img src={playApp} alt="App Store" />
-            </a>
+        <div className="content">
+          <div className="download-content">
+            <h2>
+              Download the DriveOn application to get more benefits and
+              experience.
+            </h2>
+            <div className="download-buttons">
+              <a href="#">
+                <img src={googlePlay} alt="Google Play Store" />
+              </a>
+              <a href="#">
+                <img src={playApp} alt="App Store" />
+              </a>
+            </div>
           </div>
         </div>
       </section>

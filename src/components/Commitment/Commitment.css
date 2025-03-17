@@ -1,57 +1,26 @@
-.commitment {
+ .commitment-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
-}
-.commitment-line{
-      max-width: 120px;      
-}
-.commitment-content{
-       margin:0 auto; 
+ }
+ .commitment-container {
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
   }
-.commitment-container {
-    display: flex;
-    flex-direction: column;
-   gap: 2rem;
-   
-}
-.commitment h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
+ .commitment h2 {
+    line-height: 2;
+ }
+ .commitment p {
+     line-height: 1.5;
+     font-size: 1rem;
+     max-width: 700px;
+     text-align: left;
 
-.commitment p {
-    line-height: 1.5;
-    font-size: 1rem;
-    max-width: 700px;
-    text-align: left;
-    
-}
-.commitment-link{
-    color: var(--textBlue);
-}
+ }
 
-
-.commitment-image img {
-    max-width: 500px;
-    height: auto;
-    position: relative;
-    bottom: 150px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: var(--textPurple);
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: var(--textPurple);
-}
+ .commitment-link {
+     color: var(--textBlue);
+ }
+ .commitment-line {
+     max-width: 120px;
+ }
